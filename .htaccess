@@ -1,0 +1,4 @@
+# Chỉ có tác dụng trên Apache. GitHub Pages (nơi app đang chạy từ 1.3d), dev server và
+# vite preview đều bỏ qua file này — giữ lại vì nó ghi một điều đã ĐO và vẫn đúng:
+# Apache 2.2 không biết .wasm, mà sai MIME thì libraw vẫn chạy nhưng mất nạp streaming.
+AddType application/wasm .wasm
